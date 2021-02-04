@@ -5,7 +5,7 @@ require_relative '../src/ascII'
 class MainTest < Minitest::Test
 
     def setup
-        @image = Image.new('../assets/teste.png')
+        @image = Image.new(File.join(File.dirname(__FILE__), '../assets/teste.png'))
         @ascII = AscII.new
     end
 
@@ -14,13 +14,13 @@ class MainTest < Minitest::Test
     end
 
     def test_reSizeIfImageBiggerThan100
-        @image = Image.new('../assets/teste_resize.jpg')
+        @image = Image.new(File.join(File.dirname(__FILE__), '../assets/teste_resize.jpg'))
         assert_equal "100 x 63", @image.getSize
     end
 
     def test_setAverageBrightnessPixels
         test_object = [[[1,2,3], [255,255,255]], [[0,0,0,], [12, 89, 200]]]
-        image_test = Image.new('../assets/teste.png', 100, false)
+        image_test = Image.new(File.join(File.dirname(__FILE__), '../assets/teste.png'), 100, false)
         image_test.pixels_matrix= test_object
         image_test.setAverageBrightnessPixels
 
