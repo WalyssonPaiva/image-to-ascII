@@ -17,7 +17,7 @@
   </a>
 
  
-  <img alt="Stars <3" src="https://img.shields.io/github/stars/WalyssonPaiva/Be-The-Hero?style=social">
+  <img alt="Stars <3" src="https://img.shields.io/github/last-commit/WalyssonPaiva/image-to-ascII?style=social">
 </p>
 <h1>
   :clipboard: Projeto:
